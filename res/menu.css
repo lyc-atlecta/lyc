@@ -1,0 +1,50 @@
+.menu {
+  position: fixed; 
+  top : 0;
+  right : 0;
+  display: inline-block;
+  }
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+  font-family: "Times New Roman";
+  font-weight: bold;
+  color: DarkGray;
+  padding: 16px;
+  font-size: 16px;
+  }
+
+.menu-content {
+  background-color: White;
+  //opacity: 0.95;
+  display: none;
+  position: absolute;
+  right : 0;
+  //min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+
+.menu-content a {
+  display: block;
+  font-family: "Times New Roman";
+  font-weight: bold;
+  color: DarkGray;
+  padding: 16px;
+  font-size: 16px;
+  text-decoration: none;
+  }
+
+.menu-content a:hover {
+  background-color: WhiteSmoke;
+  }
+
+.menu:hover .menu-button {
+  //background-color: LightGray;
+  //box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+.menu:hover .menu-content {
+  display: block;
+  }
