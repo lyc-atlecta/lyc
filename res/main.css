@@ -1,7 +1,8 @@
 .body {
   margin: 0px;
-  font-family: 'Arial';
-  font-size: 14pt;
+  font-family: 'Calibri';
+  font-size: 16pt;
+  overflow-x: hidden;
   }
 
 .bg {
@@ -40,11 +41,11 @@
   }
 
 .page-cover {
-  border: 1px solid black;
-  width: 66ch;
+  border: 2px solid black;
+  width: 52ch;
   margin: 10px;
-  background-color: yellow;  
-  min-height: 50em;  
+  background-color: black;  
+  min-height: 32em;  
   display: flex;
   align-items: center;  
   }
@@ -58,21 +59,21 @@
   }
 
 .page {
-  border: 1px solid black;
-  padding-left: 3ch;
-  padding-right: 3ch;
+  border: 2px solid black;
+  padding-left: 2ch;
+  padding-right: 2ch;
   padding-top: 1em;
   padding-bottom: 1em;
-  width: 60ch;
+  width: 48ch;
   //max-height: 50em;
-  min-height: 50em;
+  min-height: 32em;
   //height: 50em;
   margin: 10px;
   background-color: white;  
   }
  
 .img-in-page {
-  width: 60ch;
+  width: 48ch;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -107,7 +108,7 @@
 
 .img-ref {
   height:0.7em;
-  opacity: 0.3;
+  opacity: 0.2;
   }
 
 .hover-img-beside span {
@@ -117,15 +118,20 @@
 a:hover .hover-img-beside span, span:hover .hover-img-beside span {
   position: fixed;
   top: 0px; 
-  left: 69ch;
+  left: 55ch;
   z-index: -1;  
   height: 100vh;
-  width: auto;  
+  width: auto;
   display: flex;
   align-items: center;
+  background : transparent;
 
   //border: 3px solid blue;
   }
+
+a:hover .bgc-white span, span:hover .bgc-white span {
+  background : white;
+}
 
 .img-beside {
   display: block;
@@ -139,5 +145,39 @@ span.hover-area {
 span.audio-ref:hover {
   cursor: pointer;
   }
+
+.div-ending-trans {
+  background-color: black;
+  transition: opacity 20s;  
+  transition-delay: 0s;
   
+  opacity : 0;
+  position: fixed;
+  top: 0px; 
+  left: 0px;
+  width: 100vw;
+  height:100vh;
+
+  z-index: -1;
   
+  //border: 3px solid red;
+  }
+     
+ .img-show {
+  height:100vh;
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.img-show-trans {
+  opacity : 0;
+  transition: opacity 18s;
+  transition-delay: 2s;  
+  }
+
+.bgc-purple {
+  background-color: #f2e6ff;
+  opacity : 0.7;
+  }

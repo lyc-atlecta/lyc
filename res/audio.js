@@ -7,11 +7,13 @@ function audioPlay(n,b)
   if(b) {
     e.load();
     e.play();
-    i.src='./res/icon-audio-off.png';
+	var next = document.getElementById('img-audio-off');
+    i.src=next.src;
   }
   else {
     e.pause();
-    i.src='./res/icon-audio-on.png';
+	var next = document.getElementById('img-audio-on');
+    i.src=next.src;
   }
 }
 

@@ -24,6 +24,8 @@ function openLightBox(n) {
 	}
 	else
 	{
+		document.getElementById("LightBox-prev").style.display = "block";
+		document.getElementById("LightBox-next").style.display = "block";
 		showLightBoxItem(0);
 	}
 
