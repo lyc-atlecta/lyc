@@ -9,11 +9,13 @@ function audioPlay(n,b)
     e.play();
 	var next = document.getElementById('img-audio-off');
     i.src=next.src;
+	i.alt=next.alt;
   }
   else {
     e.pause();
 	var next = document.getElementById('img-audio-on');
     i.src=next.src;
+	i.alt=next.alt;
   }
 }
 
