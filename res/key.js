@@ -33,7 +33,9 @@ function refreshQ(ix) {
   document.getElementById("q" + ix.toString() ).innerHTML = decrypt(Q[ix], salt);
   if(document.getElementById("q" + ix.toString() ).innerHTML == ""){
 	  document.getElementById("r" + ix.toString() ).value = "";
+	  document.getElementById("r" + ix.toString() ).placeholder = "";
   }
+  else document.getElementById("r" + ix.toString() ).placeholder  = P[ix];
 }
 
 function refreshC(ix) {
