@@ -193,7 +193,6 @@ span.audio-ref:hover {
   left:50%;
   transform: translate(-50%,-50%);
   font-size:150px;
-  color:ligthgray;
   opacity:0.1;
 }
 
@@ -203,5 +202,6 @@ span.audio-ref:hover {
   left: 50%;
   transform: translate(-50%,-50%);
   font-size:30px;
-  color:lightgray;
+  color:black;
+  opacity:0.1;  
 }
