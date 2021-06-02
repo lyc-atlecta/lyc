@@ -35,7 +35,10 @@ function refreshQ(ix) {
 	  document.getElementById("r" + ix.toString() ).value = "";
 	  document.getElementById("r" + ix.toString() ).placeholder = "";
   }
-  else document.getElementById("r" + ix.toString() ).placeholder  = P[ix];
+  else{
+	  var p = document.getElementById("p" + ix.toString());
+	  document.getElementById("r" + ix.toString() ).placeholder = p.placeholder;
+  }
 }
 
 function refreshC(ix) {
