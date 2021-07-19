@@ -85,10 +85,12 @@ function refreshAll() {
 	for(var ix = 0; ix < Q.length; ix++){
 		refreshQ(ix);
 	}
+	/*
 	var C = getC();
 	for(var ix = 0; ix < C.length; ix++){
 		refreshC(ix);
 	}
+	*/
 	refreshHeader();
 	enableEnter();
 }

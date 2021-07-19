@@ -18,8 +18,8 @@
 <script>
 
 var Q = [
-  "U2FsdGVkX181xFOrp4pQ7Crvwm3Ruu3QGT5WjqLBBXk=",
-  "U2FsdGVkX1+1PxVvW5OdYc6JY7w168PCqf6IYoxAqID1dXbNSeIsEQuC1WGL2Ql4skIH+i4V7mlsrC9YrSSlEw==",
+  "U2FsdGVkX1/rbW2DbvHZHZ0J2SPGUIrzby76WYLEITDskqSslHN/LkvoCbihTaO1",
+  "U2FsdGVkX1/P6+s/zjvyniXKJIzW1oFKMytPqFAoo+vTABX2mkSOqCyfuLQ9v3QePmMjlWo9ZjuH3ZXiZOXnew==",
   "U2FsdGVkX18O/W6DLldiDSMbfGItoSPVTkN+l+D0NjMOh0UsBct9ufakyqC3oVOmqhIm/6WqLQmq0BAqI8cZdaWxDQ+5yUf2NK4cQpXFqQw=",
   "U2FsdGVkX1/rXsK9pG5oMD7ia4Xl3A/ddYDu5PftEc6p34RXR+rt4iiNETlL/8u5Gmc7YPNeJxBzi/erFGAE0I+BGYkamgenbEXXkYoE1QRNFFi5pjiL0rlgzjA0z/DV",
   ];
@@ -28,8 +28,8 @@ var C = [
 	 [ "U2FsdGVkX19pho5reNYRVHXQKAUALzjHHJjbglMc8/U=", "U2FsdGVkX1+1ckSLNVJnyIvT7UxP6ow+KiErDxphOlg="]
   ];
 
-var H = "U2FsdGVkX18kKgOtr61HaCS3vKoi4cBdsl8Xp0Rk1VHlIZ2l9SVVYXekUgAp7vZM";
-var K = "U2FsdGVkX19KJhdRBLBmT753D1NNAZ0x+w/P6c1rbHA=";
+var H = "U2FsdGVkX1/d02ZTLvOVjK+3GOuU3tO8QyrG1UNiZL3/cN1KxHx7jBQIRp7pnwz4";
+var K = "U2FsdGVkX19NRJ/2kuh8x1ZKD6PxO9wk1BdKGs6A9qgNwc/m4+U2eUSWbfdFNkA3";
 var U = "U2FsdGVkX1+bwSI9UMlHR0VASFt/+MsJDYIfevk3Hs1NkDkqKlrcXdtntlYYLBSGypmRu+kV/BoYJZ5YT/Re5iBwa6XSNCDzQkPog2flvfWD6nG45iEeCHXolRva3gsL";
 
 </script>
@@ -235,7 +235,7 @@ var U = "U2FsdGVkX1+bwSI9UMlHR0VASFt/+MsJDYIfevk3Hs1NkDkqKlrcXdtntlYYLBSGypmRu+k
 <br/>
 
 <div style="display:none;">
-<input id="p0" type="text" placeholder="1-ABC-123"/>
+<input id="p0" type="text" placeholder="Rue Joseph Wauters"/>
 <input id="p1" type="text" placeholder="Anne-Sophie Delhaye"/>
 <input id="p2" type="text" placeholder="Warfus&#233;e"/>
 <input id="p3" type="text" placeholder="NRB"/>
@@ -244,7 +244,12 @@ var U = "U2FsdGVkX1+bwSI9UMlHR0VASFt/+MsJDYIfevk3Hs1NkDkqKlrcXdtntlYYLBSGypmRu+k
 <table class="key-table">
   <tr class="key-table-border">
     <td><p id="q0" class="key-table">Key #0</p></td>
-    <td><input id="r0" type="text" placeholder="" name="" onkeyup="onKeyUp()"/></td>
+    <td>
+    <div class="div-pk">
+    <img src="res/img-pk.png" alt="&#9715; image missing" class="img-pk" onclick="return openLightBox(this);"/>
+    </div>
+    <input id="r0" type="text" placeholder="" name="" onkeyup="onKeyUp()"/>
+    </td>
   </tr>
   <tr class="key-table-border">
     <td><p id="q1" class="key-table">Key #1</p></td>
@@ -261,14 +266,6 @@ var U = "U2FsdGVkX1+bwSI9UMlHR0VASFt/+MsJDYIfevk3Hs1NkDkqKlrcXdtntlYYLBSGypmRu+k
 </table>
 
 <table class="key-table">
-  <tr>
-    <td><p id="ct0" class="key-table">Title #0</p></td>
-    <td><input id="cv0" type="text" placeholder="" name="" readonly="true"/></td>
-  </tr>
-  <tr>
-    <td><p id="ct1" class="key-table">Title #1</p></td>
-    <td><input id="cv1" type="text" placeholder="" name="" readonly="true"/></td>
-  </tr>
   <tr>
     <td><p class="key-table"></p></td>
     <td>
