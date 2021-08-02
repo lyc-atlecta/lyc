@@ -1,0 +1,87 @@
+div.key-block {
+  position: fixed;
+  top: 0px; 
+  left: 0px;
+  width: 100vw;
+  height:100vh;  
+  z-index: -1;
+  overflow-x : hidden;
+  overflow-y : auto;
+  //display: none;
+  }
+
+div.key-header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 120ch;
+}
+
+div.key-header p {
+  margin: 2ch;
+  font-size: 16px;
+  font-weight: bold;  
+  text-align: center;  
+}
+
+table.key-table {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;  
+  color: black;
+  border-collapse: collapse;
+  padding : 20px;
+	
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+table.key-table tr td {
+  padding : 5px;
+}
+
+table.key-table tr.key-table-border {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+table.key-table p {
+  width: 80ch;
+  text-align: right;  
+}
+
+table.key-table input {
+  font-size: 14px;
+  font-weight: bold;  
+  color: black;
+  width: 30ch;
+  padding: 5px;
+  margin: 3px;
+  }
+
+table.key-table a.enter {
+  color:black;
+  text-decoration: none;  
+  display: block;
+  pointer-events: none;
+  opacity: 0.2;
+  }  
+
+table.key-table img.enter {
+  height: 2em;
+  }  
+
+table.key-table div.div-pk {
+  width: 100%;
+  text-align: center;  
+  }  
+
+table.key-table img.img-pk {
+  margin: 3px;
+  width : 33ch;
+  //height : 20ch;
+  }  
+
+table.key-table img.img-pk:hover {
+  cursor: pointer;
+  }
+ 
