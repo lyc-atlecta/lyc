@@ -24,8 +24,9 @@ function getC()
 
 function getU(identer)
 {
+  if(identer == "enter1") return U1;
   if(identer == "enter2") return U2;
-  return U1;
+  return null;
 }
 
 function refreshQ(ix) {
