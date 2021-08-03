@@ -85,6 +85,10 @@ function enableEnter(identer) {
 
   enter.style.pointerEvents = (b) ? "auto" : "none";
   enter.style.opacity = (b) ? 1 : 0.2;
+  
+  var warn = document.getElementById("warn");
+  warn.style.visibility = (b) ? "visible" : "hidden";
+  
 }
 
 function enableEnters() {

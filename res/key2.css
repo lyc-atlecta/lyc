@@ -84,4 +84,7 @@ table.key-table img.img-pk {
 table.key-table img.img-pk:hover {
   cursor: pointer;
   }
- 
+
+table.warn {
+  visibility: hidden;
+  }  
