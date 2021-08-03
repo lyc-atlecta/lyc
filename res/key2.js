@@ -22,9 +22,10 @@ function getC()
   return C;
 }
 
-function getU()
+function getU(identer)
 {
-  return U;
+  if(identer == "enter2") return U2;
+  return U1;
 }
 
 function refreshQ(ix) {
@@ -64,19 +65,30 @@ function refreshC(ix) {
   }
 }
 
-function enableEnter() {
-  var ixMax = 0; //Q.length-1;
+function enableEnter(identer) {
+/*
+  var ixMax = Q.length-1;
   var salt = document.getElementById("r" + ixMax.toString() ).value;
+*/
+  var salt = document.getElementById("r0").value;
 
   var b = document.getElementById("r0").value != "" && decrypt(K, salt)!= "" && document.getElementById("r0").value == decrypt(K, salt); 
 
-  var enter = document.getElementById("enter");
-  var U = getU();
+  var enter = document.getElementById(identer);
+  
+  if(enter == null) return;
+  
+  var U = getU(identer);
 
   enter.href = decrypt(U, salt)
 
   enter.style.pointerEvents = (b) ? "auto" : "none";
   enter.style.opacity = (b) ? 1 : 0.2;
+}
+
+function enableEnters() {
+	enableEnter("enter1");
+	enableEnter("enter2");
 }
 
 function refreshHeader() {
@@ -100,7 +112,7 @@ function refreshAll() {
 	}
 	*/
 	//refreshHeader();
-	enableEnter();
+	enableEnters();
 }
 
 function onKeyUp() {
