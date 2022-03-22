@@ -73,6 +73,13 @@
   margin: 10px;
   background-color: white;  
   }
+
+ .page2 {
+  font-size: 16pt;	 
+  border: 2px solid lightgray;
+  padding-left: 8ch;	 
+  width: 42ch;
+ }
  
 .img-in-page {
   width: 48ch;
@@ -204,4 +211,8 @@ span.audio-ref:hover {
   font-size:30px;
   color:black;
   opacity:0.1;  
+}
+
+.jright {
+	text-align:right;
 }
