@@ -4,8 +4,6 @@
   left: 0;
   top: 0;
   z-index: 1;
-  width: 100%;
-  height: 100%;
   overflow: hidden;
   background-color: black;
 
@@ -13,10 +11,13 @@
 }
 
 .LightBox-content {
-  position: relative;
+  position: fixed;
   background-color: black;
   padding: 0;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 1;
 
   top: 50%; left: 50%;
   transform: translate(-50%,-50%);
@@ -36,9 +37,11 @@
 
   transition: 0.6s ease;
 
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 25px;
+  
+  z-index: 1;
 }
 
 .LightBox-close:hover {
@@ -54,11 +57,14 @@
 
   transition: 0.6s ease;
 
-  position: absolute;
+  position: fixed;
   top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
+  
+  z-index: 1;
+  
 }
 
 .LightBox-next {

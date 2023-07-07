@@ -73,5 +73,10 @@ function __showLightBoxImage(id, s) {
     i.style.width= "auto";
     i.style.height= "100%";
   }
-
-}
+  // + patch for version embedded in html
+  else
+  {
+    i.style.transform = "translateY(70px)";
+  }
+  // - patch for version embedded in html
+ }

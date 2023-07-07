@@ -43,6 +43,8 @@
   }
 
 .page-cover {
+  font-size: 16pt;
+
   border: 2px solid black;
   width: 52ch;
   margin: 10px;
@@ -61,6 +63,8 @@
   }
 
 .page {
+  font-size: 16pt;
+
   border: 2px solid black;
   padding-left: 2ch;
   padding-right: 2ch;
