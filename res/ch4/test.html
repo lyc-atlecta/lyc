@@ -203,10 +203,21 @@ function onLoad() {
 
 function enterText() {
 	var inputField = document.getElementById('r0');
+	inputField.value = "Votre phrase ici";
 	inputField.focus();
 
 	// Activer le clavier virtuel
 	var event = new Event('touchstart', { bubbles: true });
+	inputField.dispatchEvent(event);
+}
+
+function enterText2() {
+	var inputField = document.getElementById('r0');
+	inputField.value = "Votre phrase ici";
+	inputField.focus();
+
+	// Créez un événement de focus pour activer le clavier virtuel
+	var event = new FocusEvent('focus', { bubbles: true });
 	inputField.dispatchEvent(event);
 }
 
@@ -282,7 +293,7 @@ var U13 = "U2FsdGVkX19DrKF65ClgSR0In6eUyPb2qTJrqCrEh0J6vUOBjRcDRmwEi7dE6KQ+a44rW
 
 <table class="key-table">
   <tr class="key-table-border">
-    <td><input id="r0" type="text" placeholder="" name="" onclick="enterText()" onkeyup="onKeyUp()"/></td>
+    <td><input id="r0" type="text" placeholder="" name="" onclick="enterText2()" onkeyup="onKeyUp()"/></td>
   </tr>
 </table>
 
