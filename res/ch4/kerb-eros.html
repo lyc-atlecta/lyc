@@ -122,15 +122,17 @@ var EMBEDDED_VALUE = "U2FsdGVkX1+aI3kvIyh+GyXC3lnCZ6DhSyYaj0gaZDxI0waccb7rloVH7A
 var HEAD = "";
 var TAIL = "";
 
-var HEAD_GDO = "https://docs.google.com/document/d/";
-var TAIL_GDO = "/edit?usp=sharing&hl=fr";
-
 var HEAD_GFO = "https://drive.google.com/drive/folders/";
 var TAIL_GFO = "?usp=sharing&hl=fr";
+
+var HEAD_GDO = "https://docs.google.com/document/d/";
+var TAIL_GDO = "/edit?usp=sharing&hl=fr";
 
 var HEAD_GFI = "https://drive.google.com/file/d/";
 var TAIL_GFI = "/view?usp=sharing&hl=fr";
 
+var HEAD_GFIE = "https://drive.google.com/uc?export=open&id=";
+var TAIL_GFIE = "&hl=fr";
 
 function decrypt(encrypted, salt) {
   try{
@@ -262,6 +264,11 @@ function processParams() {
     VALUE_TYPE = VALUE_URL;
 	HEAD = HEAD_GFI;
 	TAIL = TAIL_GFI;
+  }
+  else if(type == "gfie"){
+    VALUE_TYPE = VALUE_URL;
+	HEAD = HEAD_GFIE;
+	TAIL = TAIL_GFIE;
   }
   
   USE_EMBEDDED_VALUE = false; 
