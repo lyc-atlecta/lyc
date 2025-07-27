@@ -134,6 +134,9 @@ var TAIL_GFI = "/view?usp=sharing&hl=fr";
 var HEAD_GFIE = "https://drive.google.com/uc?export=open&id=";
 var TAIL_GFIE = "&hl=fr";
 
+var HEAD_GPR = "https://docs.google.com/presentation/d/";
+var TAIL_GPR = "/present?usp=sharing@hl=fr";
+
 function decrypt(encrypted, salt) {
   try{
     var decrypted = CryptoJS.AES.decrypt(encrypted, salt);
@@ -269,6 +272,11 @@ function processParams() {
     VALUE_TYPE = VALUE_URL;
 	HEAD = HEAD_GFIE;
 	TAIL = TAIL_GFIE;
+  }
+  else if(type == "gpr"){
+    VALUE_TYPE = VALUE_URL;
+	HEAD = HEAD_GPR;
+	TAIL = TAIL_GPR;
   }
   
   USE_EMBEDDED_VALUE = false; 
