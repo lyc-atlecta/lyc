@@ -52,8 +52,8 @@ table.key-table {
   border-collapse: collapse;
   padding : 20px;
 	
-  margin-left: auto;
-  margin-right: auto;
+  _OFF_margin-left: auto;
+  _OFF_margin-right: auto;
   }
 
 table.key-table tr td {
@@ -137,6 +137,15 @@ var TAIL_GFIE = "&hl=fr";
 var HEAD_GPR = "https://docs.google.com/presentation/d/";
 var TAIL_GPR = "/present?usp=sharing@hl=fr";
 
+var HEAD_FSET = "https://www.facebook.com/media/set/?";
+var TAIL_FSET = "";
+
+var HEAD_FPHO = "https://www.facebook.com/photo/?";
+var TAIL_FPHO = "";
+
+var HEAD_FPLK = "https://www.facebook.com/permalink.php?";
+var TAIL_FPLK = "";
+
 function decrypt(encrypted, salt) {
   try{
     var decrypted = CryptoJS.AES.decrypt(encrypted, salt);
@@ -216,6 +225,14 @@ function enableOuput(idout) {
 	{
 	  out.style.display = "none";
 	}
+	else
+	{
+		out.style.display = "none";
+		if(b)
+		{
+			out.style.display = "block";
+		}
+	}
   }
   
 }
@@ -277,6 +294,21 @@ function processParams() {
     VALUE_TYPE = VALUE_URL;
 	HEAD = HEAD_GPR;
 	TAIL = TAIL_GPR;
+  }
+  else if(type == "falb"){
+    VALUE_TYPE = VALUE_URL;
+	HEAD = HEAD_FSET;
+	TAIL = TAIL_FSET;
+  }
+  else if(type == "fpho"){
+    VALUE_TYPE = VALUE_URL;
+	HEAD = HEAD_FPHO;
+	TAIL = TAIL_FPHO;
+  }
+  else if(type == "fpub"){
+    VALUE_TYPE = VALUE_URL;
+	HEAD = HEAD_FPLK;
+	TAIL = TAIL_FPLK;
   }
   
   USE_EMBEDDED_VALUE = false; 
@@ -368,7 +400,10 @@ d[k>>>24]^e[n>>>16&255]^j[g>>>8&255]^l[h&255]^c[p++],n=d[n>>>24]^e[g>>>16&255]^j
 
 <table class="key-table">
   <tr class="key-table-border">
+    <!--
     <td><center>A utiliser sur PC - Incompatible avec un t&eacute;l&eacute;phone mobile</center></td>
+	-->
+    <td>&nbsp;&nbsp;&nbsp;Kerb-Eros</td>
   </tr>
 
   <tr id="rowforin1" class="key-table-border">
@@ -394,7 +429,7 @@ d[k>>>24]^e[n>>>16&255]^j[g>>>8&255]^l[h&255]^c[p++],n=d[n>>>24]^e[g>>>16&255]^j
 
   <tr>
     <td>
-    <a id="out1" class="enter" href="#" onclick="onTarget()">
+    <a id="out1" class="enter" href="#" onclick="onTarget()">&nbsp;
     <img src="https://raw.githubusercontent.com/lyc-atlecta/lyc/master/res/icon-enter.png" alt="Entrer" class="enter"/>
     </a>
     </td>
